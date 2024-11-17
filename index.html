@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLIS Student Profile</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #f7e8ff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #4b0082;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header img {
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 10px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #4b0082;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px 0;
+        }
+
+        .main {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #4b0082;
+            margin-bottom: 10px;
+        }
+
+        .work, .hobbies {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .work p, .hobbies p {
+            background: #e8d1ff;
+            border: 1px solid #4b0082;
+            padding: 15px;
+            border-radius: 8px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: #4b0082;
+            color: #fff;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                width: 100%;
+            }
+        }
+        
+        h1 {
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Batya Charlotte Lenny-BLIS Student at CoCIS</h1>
+        <nav>
+            <ul>
+                <li><a href="#schools">Schools</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+            </ul>
+        </nav>
+        <img src="profilepicture.jpg" alt="Profile Picture">
+    </header>
+    <div class="container">
+        <section id="schools" class="main">
+            <h2>Schools Attended</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Kampala Nursery School</h3>
+                    <p>2005-2007</p>
+                </div>
+                <div class="card">
+                    <h3>Jack and Jill Nursery and Primary School</h3>
+                    <p>2008-2012</p>
+                </div>
+                <div class="card">
+                    <h3>St Kizito Learning Center</h3>
+                    <p>2012-2013</p>
+                </div>
+                <div class="card">
+                    <h3>Good Times Infant School Kawaala</h3>
+                    <p>2013-2014</p>
+                </div>
+                <div class="card">
+                    <h3>St Peters Senior Secondary School Nsambya</h3>
+                    <p>2015-2018</p>
+                </div>
+                <div class="card">
+                    <h3>St Peters Senior Secondary School Nsambya</h3>
+                    <p>2019-2020</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="work" class="main">
+            <h2>Work Experience</h2>
+            <div class="work">
+                <p>Internship at the Ministry of Public Service (June-August 2023)</p>
+                <p>Worked at Taslaf Advocates (September-December 2023)</p>
+                <p>Records Assistant at Citadel Advocates</p>
+            </div>
+        </section>
+
+        <section id="hobbies" class="main">
+            <h2>Hobbies</h2>
+            <div class="hobbies">
+                <p><strong>Singing and Dancing:</strong> Helps me exercise and enjoy music.</p>
+                <p><strong>Travelling:</strong> I love exploring new places and cuisines.</p>
+                <p><strong>Football:</strong> Enjoy playing and watching the game.</p>
+            </div>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; All rights reserved BATYA CHARLOTTE LENNY 2024</p>
+    </footer>
+</body>
+</html>
